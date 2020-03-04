@@ -1,6 +1,6 @@
-CREATE DATABASE trackrx_db
+CREATE DATABASE trackrx_db;
 
-USE trackrx_db
+USE trackrx_db;
 
 CREATE TABLE user (
     userID INTEGER AUTO_INCREMENT NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE medication (
     medicationDosage VARCHAR(10) NOT NULL,
     medicationQuantity INTEGER NOT NULL,
     medicationFrequency VARCHAR(30) NOT NULL,
-    DEFAULT TIMESTAMP,
+    updated TIMESTAMP,
     FOREIGN KEY(userID) REFERENCES user(userID),
     PRIMARY KEY (medicationID)
 
