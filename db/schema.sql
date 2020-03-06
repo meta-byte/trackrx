@@ -17,7 +17,7 @@ CREATE TABLE medication (
     medicationName VARCHAR(50) NOT NULL,
     medicationDosage VARCHAR(10) NOT NULL,
     medicationQuantity INTEGER NOT NULL,
-    medicationFrequency VARCHAR(30) NOT NULL,
+    medicationFrequency VARCHAR(300) NOT NULL,
     updated TIMESTAMP,
     FOREIGN KEY(userID) REFERENCES user(userID),
     PRIMARY KEY (medicationID)
