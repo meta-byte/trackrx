@@ -1,0 +1,16 @@
+.nav-wrapper {
+    background-color: white;
+    
+}
+nav .brand-logo {
+    color: #d50000;
+}
+nav ul a {
+    color: #d50000;
+}
+.bannerImage {
+    position: absolute;
+    height: 200px;
+    top: 67px;
+
+}
