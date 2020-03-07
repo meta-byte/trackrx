@@ -6,33 +6,33 @@ var path = require("path");
 
 module.exports = function (app) {
 
-  // app.get("/", function (req, res) {
-  //   // If the user already has an account send them to the members page
-  //   if (req.user) {
-  //     res.redirect("/members");
-  //   }
-  //   res.sendFile(path.join(__dirname, "../public/signup.html"));
-  // });
-
-  // app.get("/login", function (req, res) {
-  //   // If the user already has an account send them to the members page
-  //   if (req.user) {
-  //     res.redirect("/members");
-  //   }
-  //   res.sendFile(path.join(__dirname, "../public/login.html"));
-  // });
-
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/html/main.html"));
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/dashboard");
+    }
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
+
+  app.get("/login", function (req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/dashboard");
+    }
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+  });
+
+  // app.get("/", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/html/main.html"));
+  // });
 
   app.get("/signup", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/signup.html"));
   });
 
-  app.get("/dashboard", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
-  });
+  // app.get("/dashboard", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
+  // });
 
   app.get("/medication", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/medications.html"));
