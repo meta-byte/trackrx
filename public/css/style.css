@@ -8,9 +8,33 @@ nav .brand-logo {
 nav ul a {
     color: #d50000;
 }
-.bannerImage {
+.image-row{
+    margin-top: 3px;
+}
+i.medium {
+    color: #d50000;
+}
+.btn{
+    background-color: rgba(109, 114, 117, 0.795);
+    width: 100%;
+}
+.btn:hover {
+    background-color: rgb(109, 114, 117);
+}
+/* .bannerImage {
     position: absolute;
     height: 200px;
     top: 67px;
+} */
+#boxes {
+    position: relative;
 
+    top: 300px;
+    height: 100px;
+    width: 100px;
 }
+/* .container  {
+    position: flex;
+    flex-direction: row;
+
+} */
