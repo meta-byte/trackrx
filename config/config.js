@@ -3,8 +3,8 @@ module.exports = {
     development: {
         username: process.env.MYSQL_USERNAME,
         password: process.env.MYSQL_PASSWORD,
-        database: "todolist",
-        host: "127.0.0.1",
+        database: "track_rx",
+        host: "localhost",
         port: 3306,
         dialect: "mysql"
     },

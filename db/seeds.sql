@@ -1,8 +1,8 @@
 INSERT INTO users (firstname, lastname, email)
 VALUES
-("Garrett", "Howard", "hylander.garrett@gmail.com"),
-("Jordan", "Hanson", "jordanmercedes@gmail.com"),
-("Tyler", "Cain", "tecain13@gmail.com");
+("Garrett", "Howard", "abdcefg", "hylander.garrett@gmail.com"),
+("Jordan", "Hanson", "abdcefg", "jordanmercedes@gmail.com"),
+("Tyler", "Cain", "abdcefg", "tecain13@gmail.com");
 
 INSERT INTO medication(userID, medicationName, medicationDosage, medicationQuantity, medicationFrequency)
 VALUES
