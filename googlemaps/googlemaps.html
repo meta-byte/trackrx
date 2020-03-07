@@ -9,9 +9,28 @@
 
     <!--CSS -->
     <link rel="stylesheet" href="googlemaps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 
 <body>
+    <!--jquery minified-->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--this one houses the api key-->
+    <!-- <script src="env.js"></script> -->
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script src="./googlemaps.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwKWWEaxaECwm7_z9_AeUr2s_PZ0YZ7xs&libraries=places&callback=initMap"
+        async defer></script>
+
+
+
+
+
+    <a id="location-button" class="waves-effect waves-light btn">Search Nearby
+        Pharmacies</a>
 
 
     <div id="right-panel">
@@ -24,24 +43,17 @@
     </div>
 
 
-    <!--this one houses the api key-->
-    <!-- <script src="env.js"></script> -->
-    <!-- Replace the value of the key parameter with your own API key. -->
-    <script src="googlemaps.js"></script>
 
 
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwKWWEaxaECwm7_z9_AeUr2s_PZ0YZ7xs&libraries=places&callback=initMap"
-        async defer></script>
+
 
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

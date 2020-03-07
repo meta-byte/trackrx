@@ -4,12 +4,30 @@
 
 var map;
 
-function initMap() {
-    // Create the map.
+function getPosition() {
+    if (navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position);
+            initMap(position);
 
-    var saltlake = { lat: 40.7608, lng: -111.8910 };
+        });
+    else
+        console.log("geolocation is not supported");
+}
+getPosition();
+
+
+
+
+
+function initMap(position) {
+
+    var curLoc = { lat: position.coords.latitude, lng: position.coords.longitude }
+
+
+    // Create the map.
     map = new google.maps.Map(document.getElementById('map'), {
-        center: saltlake,
+        center: curLoc,
         zoom: 13
 
     });
@@ -24,22 +42,10 @@ function initMap() {
     };
 
 
-    // var queryURL = "https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap&key=";
-
-    // queryURL = queryURL + key;
-
-    // $.ajax({
-    //     url: queryURL,
-    //     method: "GET"
-    // }).then(function (response) {
-    //     console.log(response);
-    // });
-
-
 
     // Perform a nearby search.
     service.nearbySearch(
-        { location: saltlake, radius: 5000, type: ['pharmacy'] },
+        { location: curLoc, radius: 5000, type: ['pharmacy'] },
         function (results, status, pagination) {
             if (status !== 'OK') return;
 
@@ -72,10 +78,10 @@ function createMarkers(places) {
         });
 
         var li = document.createElement('li');
-        li.textContent = place.name;
+        li.textContent = place.name, place.adr_address;
         placesList.appendChild(li);
 
         bounds.extend(place.geometry.location);
     }
     map.fitBounds(bounds);
-}
+};
