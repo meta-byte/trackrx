@@ -3,8 +3,6 @@ var passport = require("passport");
 //for reference, here is the npm module page for more info: https://www.npmjs.com/package/passport
 //we also used this in the Reverse Engineering assignment
 
-
-
 var LocalStrategy = require("passport-local").Strategy;
 
 //ADD A VAR "db" to require the models folder here once created
