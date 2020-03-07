@@ -23,9 +23,23 @@ function initMap() {
         if (getNextPage) getNextPage();
     };
 
+
+    // var queryURL = "https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap&key=";
+
+    // queryURL = queryURL + key;
+
+    // $.ajax({
+    //     url: queryURL,
+    //     method: "GET"
+    // }).then(function (response) {
+    //     console.log(response);
+    // });
+
+
+
     // Perform a nearby search.
     service.nearbySearch(
-        { location: saltlake, radius: 500, type: ['pharmacy'] },
+        { location: saltlake, radius: 5000, type: ['pharmacy'] },
         function (results, status, pagination) {
             if (status !== 'OK') return;
 

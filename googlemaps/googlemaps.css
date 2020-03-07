@@ -29,9 +29,9 @@
     position: absolute;
     right: 5px;
     top: 60%;
-    margin-top: -195px;
-    height: 430px;
-    width: 400px;
+    margin-top: -450px;
+    height: 530px;
+    width: 500px;
     padding: 5px;
     z-index: 5;
     border: 1px solid #999;
@@ -46,7 +46,7 @@
     padding: 0;
     margin: 0;
     height: 271px;
-    width: 200px;
+    width: 100%;
     overflow-y: scroll;
   }
   li {
