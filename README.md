@@ -3,7 +3,7 @@
 
 
 
-#Description of Project:
+# Description of Project:
 This application will provide a simple user interface (that will require log-in credentials for security purposes) that will allow a user to:
 *Input which medications they are currently utilizing
 *Their medication dosage (e.g. in milligrams)
