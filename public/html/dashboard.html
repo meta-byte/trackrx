@@ -4,10 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TrackRx</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
 </head>
 
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="main.html" class="brand-logo">TrackRx</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="section dashboard">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="services-block banner">
+                            <h5 class="center black-text">
+                                Notification Banner
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6 class="center black-text medications-block">
+                            Current Medications
+                        </h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="center black-text medications-block">
+                            Add New Medication
+                        </h6>
+                        <div class="row">
+                            <div class="input-field col s12 center">
+                                <input id="medname" type="name" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your consumption schedule</option>
+                                    <option value="1">Once a day</option>
+                                    <option value="2">Twice a day</option>
+                                    <option value="3">As needed</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">TrackRx</h5>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <h5 class="copyright">© 2020 Copyright Text</h5>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
