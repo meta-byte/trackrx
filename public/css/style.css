@@ -81,6 +81,7 @@ i.medium {
 }
 .contactform {
     border: solid grey;
+
 }
 .dashboard {
     border: solid grey;
@@ -92,3 +93,6 @@ i.medium {
     border: solid grey;
     height: 200px;
 } */
+.new-medication {
+    border: solid grey;
+}
