@@ -4,10 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TrackRx</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <script src="../edittable.js"></script> -->
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
+
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">TrackRx</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="pharmacy.html">Pharmacies Near Me</a></li>
+                <li><a href="main.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="pharmacy.html">Pharmacies Near Me</a></li>
+        <li><a href="main.html">Logout</a></li>
+    </ul>
+
+
+    <div>
+        <img class="responsive-img" id="bannerImage" src="../css/banner.jpeg">
+    </div>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+
+
+        <a class="waves-effect waves-light btn-small" id="more" id="addmeds" style="width: 100%;
+                        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">Add a Medication</a>
+
+        <div class="row">
+
+
+
+
+
+            <div class="col s12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Medication Name</th>
+                            <th>Dosage</th>
+                            <th>Quantity</th>
+                            <th>Frequency</th>
+                            <th>Time Last Consumed</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Vicodin</td>
+                            <td>10mg</td>
+                            <td>30</td>
+                            <td>One tablet every four to six hours as needed</td>
+                            <td>4:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Amoxicillin</td>
+                            <td>250mg</td>
+                            <td>21</td>
+                            <td>500 mg every 8 hours</td>
+                            <td>9:00 am</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flonase</td>
+                            <td>50mcg</td>
+                            <td>30</td>
+                            <td>One or two sprays once a day</td>
+                            <td>1:00 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <br>
+                <br>
+                <br>
+
+                <footer class="page-footer" id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="grey-text text-lighten-4" style="text-align: center;">Powered by the
+                                    University of Utah
+                                    Fullstack Bootcamp</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
 
 </body>
 

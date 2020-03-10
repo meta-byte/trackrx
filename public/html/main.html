@@ -8,24 +8,77 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
+
+
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">TrackRx</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="signup.html">Login</a></li>
+            <a href="#!" class="brand-logo">TrackRx</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </div>
     </nav>
-    <img alt="banner" class="bannerImage" src="../css/banner.jpeg">
-    <div class="container">
-        <div>
-        </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+
+
+    <div>
+        <img class="responsive-img" id="bannerImage" src="../css/banner.jpeg">
     </div>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+
+
+        <div class="row">
+
+            <div class="col s4" style="text-align: center;">
+                <i class="material-icons" style="font-size: 100px; color: #d50000; opacity: 50%;">border_color</i>
+                <h6 style="text-align: center; font-weight: bold; color:#36454f ">Input Your Medcation</h6>
+                <p>Keep a current list of all the medications you're taking.</p>
+            </div>
+            <div class=" col s4" style="text-align: center;">
+                <i class="material-icons" style="font-size: 100px; color: #d50000; opacity: 50%;">alarm</i>
+                <h6 style="text-align: center; font-weight: bold; color:#36454f ">Monitor Your Dose</h6>
+                <p>Input your dosage to ensure you're taking the proper amount at the right time.</p>
+            </div>
+            <div class="col s4" style="text-align: center;">
+                <i class="material-icons" style="font-size: 100px; color: #d50000; opacity: 50%;">location_city</i>
+                <h6 style="text-align: center; font-weight: bold; color:#36454f ">Find Pharmacies Near You</h6>
+                <p>Locate nearby pharmacies for your refilling convenience.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="page-footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="grey-text text-lighten-4" style="text-align: center;">Powered by the University of Utah
+                        Fullstack Bootcamp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 </body>
 
 </html>

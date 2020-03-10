@@ -14,50 +14,59 @@
     <title>Pharmacy Tab</title>
 </head>
 
-
-<nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo">TrackRx</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="signup.html">Login</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-    </div>
-</nav>
-<img alt="banner" class="bannerImage" src="../css/banner.jpeg">
-
-<div class="container">
-
-
-    <row>
-        <col s12>
-        <div id="map-panel">
-
-            <div id="map"></div>
-            </col>
-            <br>
-
-            <row>
-                <h4>Results Near You</h5>
-                    <ul id="places"></ul>
-
-                    <a class="waves-effect waves-light btn-small" id="more">More Results</a>
-
-        </div>
-    </row>
-    <br>
-</div>
-
-</row>
-</div>
-
-
-
-
-
-
 <body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">TrackRx</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+
+
+
+
+
+    <img alt="banner" class="bannerImage" src="../css/banner.jpeg">
+
+    <div class="container">
+
+
+        <row>
+            <col s12>
+            <div id="map-panel">
+
+                <div id="map"></div>
+                </col>
+                <br>
+
+                <row>
+                    <h4>Results Near You</h5>
+                        <ul id="places"></ul>
+
+                        <a class="waves-effect waves-light btn-small" id="more" style="width: 100%;
+                        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">More Results</a>
+
+            </div>
+        </row>
+        <br>
+    </div>
+
+    <!-- </row>
+</div> -->
+
+
+
 
 </body>
 
