@@ -18,6 +18,3 @@ This application would be designed to alleviate the stress of individuals who ha
 # API Used:
 Google Maps API 
 Will collect the user’s current location and display nearby pharmacies
-
-GoodRX API
-Will autocomplete/suggest medication names upon initial user entry
