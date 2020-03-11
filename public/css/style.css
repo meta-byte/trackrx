@@ -82,6 +82,7 @@ i.medium {
 }
 .contactform {
     border: solid grey;
+
 }
 .dashboard {
     border: solid grey;
@@ -93,6 +94,9 @@ i.medium {
     border: solid grey;
     height: 200px;
 } */
+.new-medication {
+    border: solid grey;
+}
 
 /*     border-bottom: 50px;
 } */
@@ -131,16 +135,16 @@ i.medium {
        font-size: 12px;
      }
      #map-panel {
-        align-self: center;
+        /* align-self: center;
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;
         top: 60%;
-        margin-top: -50px;
-        height: 75%;
-        width: 85%;
-        right: 4%;
+        margin-top: -50px; */
+        height: 501px;
+        width: 459px;
+        /* right: 4%;
         padding: 5px;
-        z-index: 5;
+        z-index: 5; */
         border: 1px solid #999;
         background: #fff;
      }
@@ -149,7 +153,7 @@ i.medium {
        margin: 0 0 5px 0;
        text-align: center;
      }
-     ul {
+     #places {
        list-style-type: none;
        padding: 0;
        margin: 0;
@@ -169,7 +173,7 @@ i.medium {
      }
 
      #more {
-       width: 100%;
+       /* width: 100%; */
        margin: 5px 0 0 0;
        background-color: #d50000;
        color: white;
