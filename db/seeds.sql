@@ -1,10 +1,10 @@
-INSERT INTO users (firstname, lastname, email)
+INSERT INTO user (firstname, lastname, email, password)
 VALUES
-("Garrett", "Howard", "abdcefg", "hylander.garrett@gmail.com"),
-("Jordan", "Hanson", "abdcefg", "jordanmercedes@gmail.com"),
-("Tyler", "Cain", "abdcefg", "tecain13@gmail.com");
+("Garrett", "Howard", "hylander.garrett@gmail.com","abdcefg"),
+("Jordan", "Hanson", "jordanmercedes@gmail.com","abdcefg"),
+("Tyler", "Cain", "tecain13@gmail.com","abdcefg");
 
-INSERT INTO medication(userID, medicationName, medicationDosage, medicationQuantity, medicationFrequency)
+INSERT INTO medication (userID, medicationName, medicationDosage, medicationQuantity, medicationFrequency)
 VALUES
 (1, "Vicodin", "10mg", 30, "One to Two tablets every four to six hours as needed."),
 (2, "Amoxicillin", "250mg", 21, "500mg ever eight hours."),
