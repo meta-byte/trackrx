@@ -8,20 +8,9 @@ nav .brand-logo {
 nav ul a {
     color: #d50000;
 }
-.image-row{
-    margin-top: 3px;
-}
-i.medium {
-    color: #d50000;
-}
-.btn{
-    background-color: rgba(109, 114, 117, 0.795);
-    width: 100%;
-}
-.btn:hover {
-    background-color: rgb(109, 114, 117);
-}
-/* .bannerImage {
+
+
+#bannerImage {
     position: absolute;
     height: 200px;
     top: 67px;
@@ -161,21 +150,33 @@ i.medium {
        width: 100%;
        overflow-y: scroll;
      }
-     li {
+    #places li {
        background-color: #f1f1f1;
        padding: 10px;
        text-overflow: ellipsis;
        white-space: nowrap;
        overflow: hidden;
      }
-     li:nth-child(odd) {
+     #places li:nth-child(odd) {
        background-color: #fcfcfc;
      }
 
-     #more {
-       /* width: 100%; */
-       margin: 5px 0 0 0;
-       background-color: #d50000;
-       color: white;
-       margin-bottom: 10px;
-     }
+    
+
+     body{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+    
+      main {
+        flex: 1 0 auto;
+      }
+
+
+      
+
+      table.fulltable{
+        margin-top: 200px;
+      };
+      

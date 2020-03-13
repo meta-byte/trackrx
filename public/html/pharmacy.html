@@ -8,7 +8,6 @@
     <title>TrackRx</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/googlemaps.js"></script>
-
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,56 +15,57 @@
 </head>
 
 <body>
+
     <nav>
-        <div class="nav-wrapper">
-            <a href="main.html" class="brand-logo">TrackRx</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="pharmacy.html">Pharmacy</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="dashboard.html">Log Out</a></li>
+        <div>
+            <a href=" #!" class="brand-logo">TrackRx</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="navbutton"><a href="main.html">Home</a></li>
+                <li class="navbutton"><a href="login.html">Login</a></li>
+                <li class="navbutton"><a href="signup.html">Sign Up</a></li>
             </ul>
         </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+
+
+
+
+
+    <img alt="banner" class="bannerImage" src="../css/banner.jpeg">
+
     <div class="container">
-        <div class="section dashboard">
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="row">
-                        <div class="services-block banner">
-                            <h5 class="center black-text">
-                                Notification Banner
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Results Near You</h4>
+
+
+        <row>
+            <col s12>
+            <div id="map-panel">
+
+                <div id="map"></div>
+                </col>
+                <br>
+
+                <row>
+                    <h4>Results Near You</h5>
                         <ul id="places"></ul>
-                        <a class="waves-effect waves-light btn-small" id="more">More Results</a>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="row">
-                        <div id="map-panel">
-                            <div id="map">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                        <a class="waves-effect waves-light btn-small" id="more" style="width: 100%;
+                        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">More Results</a>
+
             </div>
-        </div>
+        </row>
+        <br>
     </div>
-    <footer class="page-footer">
-        <div class="row">
-            <div class="col s12">
-                <h5 class="white-text">TrackRx</h5>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <h5 class="copyright">© 2020 Copyright Text</h5>
-            </div>
-        </div>
-    </footer>
+
+
+
+
+
 
 </body>
 

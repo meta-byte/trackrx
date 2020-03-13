@@ -7,8 +7,9 @@
     <title>TrackRx</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
+
 </head>
 
 <body>
@@ -114,6 +115,73 @@
             </div>
         </div>
     </footer>
+
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">TrackRx</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+
+
+    <div>
+        <img class="responsive-img" id="bannerImage" src="../css/banner.jpeg">
+    </div>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a class="waves-effect waves-light btn-small" id="submit" style="width: 100%;
+        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">Join Us</a>
+
+
+        <br>
+        <br>
+        <br>
+
+        
 
 </body>
 
