@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackRx</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <link rel="stylesheet" href="/css/style.css" media="screen" title="no title"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -43,12 +42,13 @@
 
 
         <div class="row">
-            <form class="col s12">
+            <form class="col s12 signup">
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" type="text" class="validate">
                         <label for="first_name">First Name</label>
                     </div>
+
                     <div class="input-field col s6">
                         <input id="last_name" type="text" class="validate">
                         <label for="last_name">Last Name</label>
@@ -68,19 +68,21 @@
                         <label for="password">Password</label>
                     </div>
                 </div>
+
+                <button class="waves-effect waves-light btn-small" type="submit" style="width: 100%;
+                margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">Join Us</button>
+
             </form>
         </div>
 
-        <a class="waves-effect waves-light btn-small" id="submit" style="width: 100%;
-        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">Join Us</a>
 
 
         <br>
         <br>
         <br>
 
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/signup.js"></script>
 </body>
 
 </html>
