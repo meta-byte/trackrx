@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackRx</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="/css/style.css" media="screen" title="no title"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -20,16 +19,16 @@
             <a href="#!" class="brand-logo">TrackRx</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="main.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Sign Up</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
     </ul>
 
 
@@ -43,12 +42,13 @@
 
 
         <div class="row">
-            <form class="col s12">
+            <form class="col s12 signup">
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" type="text" class="validate">
                         <label for="first_name">First Name</label>
                     </div>
+
                     <div class="input-field col s6">
                         <input id="last_name" type="text" class="validate">
                         <label for="last_name">Last Name</label>
@@ -68,18 +68,21 @@
                         <label for="password">Password</label>
                     </div>
                 </div>
+              
+                <button class="waves-effect waves-light btn-small" type="submit" id="join">Join Us</button>
+
             </form>
         </div>
 
-        <a class="waves-effect waves-light btn-small" id="join">Join Us</a>
+
 
 
         <br>
         <br>
         <br>
 
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/signup.js"></script>
 </body>
 
 </html>

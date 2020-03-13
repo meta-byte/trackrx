@@ -1,9 +1,9 @@
 $(document).ready(function () {
     var signUpForm = $("form.signup");
-    var firstNameInput = $("input#first-input");
-    var lastNameInput = $("input#last-input");
-    var emailInput = $("input#email-input");
-    var passwordInput = $("input#password-input");
+    var firstNameInput = $("input#first_name");
+    var lastNameInput = $("input#last_name");
+    var emailInput = $("input#email");
+    var passwordInput = $("input#password");
 
 
     signUpForm.on("submit", function (event) {
@@ -18,7 +18,6 @@ $(document).ready(function () {
         if (!userData.first || !userData.last || !userData.email || !userData.password) {
             return;
         }
-        // If we have an email and password, run the signUpUser function
         signUpUser(userData.first, userData.last, userData.email, userData.password);
         firstNameInput.val("");
         lastNameInput.val("");
@@ -34,12 +33,14 @@ $(document).ready(function () {
             password: password
         })
             .then(function () {
+                console.log("new user created.")
                 window.location.replace("/dashboard");
             })
             .catch(handleErr);
     }
 
     function handleErr(err) {
-        console.log("There was an error logging in: " + err)
+        console.log("There was an error logging in:")
+        console.log(err.responseJSON)
     }
 })
