@@ -15,14 +15,16 @@ module.exports = function (app) {
   // otherwise send back an error
   app.post("/api/signup", function (req, res) {
     db.User.create({
-      first:
-        email: req.body.email,
+      first: req.body.first,
+      last: req.body.last,
+      email: req.body.email,
       password: req.body.password
     })
       .then(function () {
         res.redirect(307, "/api/login");
       })
       .catch(function (err) {
+        console.log("there was an error...")
         res.status(401).json(err);
       });
   });

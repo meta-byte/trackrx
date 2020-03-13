@@ -33,5 +33,7 @@ module.exports = function (sequelize, DataTypes) {
         });
     };
 
+    Medication.sync()
+
     return Medication;
 };
