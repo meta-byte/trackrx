@@ -3,145 +3,98 @@
     
 }
 nav .brand-logo {
-    color: #d50000;
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
 }
+
+
 nav ul a {
     color: #d50000;
 }
 
+.navbutton{
+  color:white
+}
 
 #bannerImage {
+  margin-top: 2px;
     position: absolute;
     height: 200px;
     top: 67px;
 
-} */
-#boxes {
-    position: relative;
-
-    top: 300px;
-    height: 100px;
-    width: 100px;
-}
-/* .container  {
-    position: flex;
-    flex-direction: row;
-
-} */
-.page-footer {
-    background-color: white;
-}
-.white-text {
-    color: #d50000 !important; 
-}
-.grey-text.text-lighten-3 {
-    color: #d50000 !important;
-}
-.grey-text.text-lighten-4 {
-    color: #d50000 !important;
-} 
-.copyright {
-    color: #d50000 !important;
-}
-.blankspace {
-    width: 336px;
-    height: 466px;
-}
-.loginform {
-    height: 466px;
-    border: solid grey;
-}
-.signupform {
-    border: solid grey;
-}
-/* #message {
-    border: solid grey;
-    background-color: white;
-} */
-#name {
-    border: solid grey;
-    background-color: white;
-    width: 980px;
-    height: 51px;
-}
-#email {
-    border: solid grey; 
-    background-color: white;
-    width: 980px;
-}
-.contactform {
-    border: solid grey;
-
-}
-.dashboard {
-    border: solid grey;
-}
-.banner {
-    border: solid grey;
-}
-/* .medications-block {
-    border: solid grey;
-    height: 200px;
-} */
-.new-medication {
-    border: solid grey;
 }
 
-/*     border-bottom: 50px;
-} */
+
+.center{
+  text-align: center;
+}
+ 
+
+
+.header6 {
+  text-align: center; 
+  font-weight: bold; 
+  color:#36454f;
+}
+
 
 
 #location-button{
-    float: right;
+  float: right;
+ }
+
+ 
+ #map {
+     height: 100%;
    }
-  
+   /* Optional: Makes the sample page fill the window. */
+   html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+   }
+   #map-panel {
+     font-family: 'Roboto','sans-serif';
+     line-height: 30px;
+     padding-left: 10px;
+   }
    
-#map {
-       height: 100%;
-     }
-     /* Optional: Makes the sample page fill the window. */
-     html, body {
-       height: 100%;
-       margin: 0;
-       padding: 0;
-     }
-     #map-panel {
-       font-family: 'Roboto','sans-serif';
-       line-height: 30px;
-       padding-left: 10px;
-     }
-     
-     #map-panel select, #map-panel input {
-       font-size: 15px;
-     }
-     
-     #map-panel select {
-       width: 100%;
-       height: 100%;
-     }
-     
-     #map-panel i {
-       font-size: 12px;
-     }
-     #map-panel {
-        /* align-self: center;
-        font-family: Arial, Helvetica, sans-serif;
-        position: absolute;
-        top: 60%;
-        margin-top: -50px; */
-        height: 501px;
-        width: 459px;
-        /* right: 4%;
-        padding: 5px;
-        z-index: 5; */
-        border: 1px solid #999;
-        background: #fff;
-     }
+   #map-panel select, #map-panel input {
+     font-size: 15px;
+   }
+   
+   #map-panel select {
+     width: 100%;
+     height: 100%;
+   }
+   
+   #map-panel i {
+     font-size: 12px;
+   }
+   #map-panel {
+      align-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      top: 60%;
+      margin-top: -50px;
+      height: 75%;
+      width: 85%;
+      right: 4%;
+      padding: 5px;
+      z-index: 5;
+      border: 1px solid #999;
+      background: #fff;
+   }
+
      h4 {
        font-size: 2.25rem;
        margin: 0 0 5px 0;
        text-align: center;
      }
+
      #places {
        list-style-type: none;
        padding: 0;
@@ -150,6 +103,7 @@ nav ul a {
        width: 100%;
        overflow-y: scroll;
      }
+
     #places li {
        background-color: #f1f1f1;
        padding: 10px;
@@ -157,26 +111,75 @@ nav ul a {
        white-space: nowrap;
        overflow: hidden;
      }
+
      #places li:nth-child(odd) {
        background-color: #fcfcfc;
      }
 
     
+     #submit{
+      width: 100%;
+        margin: 5px 0 0 0;  
+        color: white; 
+        margin-bottom: 10px; 
+        opacity: 50%;
+    }
 
-     body{
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-      }
-    
-      main {
-        flex: 1 0 auto;
-      }
-
-
+     #more {
+      width: 100%;
+      margin: 5px 0 0 0;  
+      color: white; 
+      margin-bottom: 10px; 
+      opacity: 50%;
+     }
       
+#join {
+    width: 100%;
+      margin: 5px 0 0 0;  
+      color: white; 
+      margin-bottom: 10px; 
+      opacity: 50%;
+}    
 
       table.fulltable{
         margin-top: 200px;
-      };
+      }
       
+
+
+#badge{
+  width: 100%;
+  margin: 5px 0 0 0;  
+  color: white; 
+  margin-bottom: 10px; 
+  opacity: 50%;
+}
+
+
+
+      table {
+        position: relative;
+        width: 525px;
+        margin: 4px 0;
+        border-collapse: collapse;
+
+        font-family: tahoma, arial, helvetica !important;
+        font-size: 9pt !important;
+    }
+
+    table,
+    table th,
+    table td {
+        border: 1px solid black;
+    }
+
+    table th,
+    table td {
+        padding: 0 2em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        line-height: 22px;
+        height: 22px;
+    }
+

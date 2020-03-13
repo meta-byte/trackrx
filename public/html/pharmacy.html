@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TrackRx</title>
-    <script src="../js/googlemaps.js"></script>
+    <script src="/js/googlemaps.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,9 +20,15 @@
             <a href=" #!" class="brand-logo">TrackRx</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+
+                <li><a class="navbutton" href="/main">Home</a></li>
+                <li><a class="navbutton" href="/login">Login</a></li>
+                <li><a class="navbutton" href="/signup">Sign Up</a></li>
+
                 <li class="navbutton"><a href="/">Home</a></li>
                 <li class="navbutton"><a href="/login">Login</a></li>
                 <li class="navbutton"><a href="/signup">Sign Up</a></li>
+
             </ul>
         </div>
     </nav>
@@ -50,11 +56,10 @@
                 <br>
 
                 <row>
-                    <h4>Results Near You</h5>
+                    <h4>Results Near You</h4>
                         <ul id="places"></ul>
 
-                        <a class="waves-effect waves-light btn-small" id="more" style="width: 100%;
-                        margin: 5px 0 0 0;  color: white; margin-bottom: 10px; opacity: 50%;">More Results</a>
+                        <a class="waves-effect waves-light btn-small" id="more">More Results</a>
 
             </div>
         </row>

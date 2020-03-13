@@ -20,33 +20,6 @@
     <link rel="stylesheet" href="../css/jquery.fulltable.css" media="screen" title="no title">
     <link rel="stylesheet" href="../css/style.css" media="screen" title="no title">
 
-    <style type="text/css">
-        table {
-            position: relative;
-            width: 525px;
-            margin: 4px 0;
-            border-collapse: collapse;
-
-            font-family: tahoma, arial, helvetica !important;
-            font-size: 9pt !important;
-        }
-
-        table,
-        table th,
-        table td {
-            border: 1px solid black;
-        }
-
-        table th,
-        table td {
-            padding: 0 2em;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            line-height: 22px;
-            height: 22px;
-        }
-    </style>
 
     <script type="text/javascript">
         $(
@@ -118,13 +91,18 @@
 
     <nav>
         <div>
-            <a href="#!" class="brand-logo" style="color: white;">TrackRx</a>
+            <a href="#!" class="brand-logo">TrackRx</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+
+                <li><a class="navbutton" href="/pharmacy">Pharmacies Near Me</a></li>
+                <li><a class="navbutton" href="/main">Logout</a></li>
+
                 <li><a href="/pharmacy" style="background-color: #E77777;
                     color: white;">Pharmacies Near Me</a></li>
                 <li><a style="background-color: #E77777;
                     color: white;" href="/main">Logout</a></li>
+
             </ul>
         </div>
     </nav>
@@ -138,6 +116,7 @@
     <div>
         <img class="responsive-img" id="bannerImage" src="../css/banner.jpeg">
     </div>
+
     <div class="container">
         <br>
         <br>
@@ -153,6 +132,7 @@
     </div>
     <div class="container">
 
+        <a class="btn-large disabled" id="badge">Hello there. Add a prescription below.</a>
 
         <!-- <h1>jQuery FullTable Plugin Demonstration</h1> -->
         <table class="fulltable fulltable-editable" id="test-table">
