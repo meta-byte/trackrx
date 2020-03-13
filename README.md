@@ -1,5 +1,5 @@
 # TrackRx Application 
-# Jordan Hansen, Garrett Howard, Tyler Cain
+# Jordan Hanson, Garrett Howard, Tyler Cain
 
 
 

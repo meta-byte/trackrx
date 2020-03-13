@@ -14,8 +14,81 @@ nav ul a {
     position: absolute;
     height: 200px;
     top: 67px;
-    border-bottom: 50px;
+
+} */
+#boxes {
+    position: relative;
+
+    top: 300px;
+    height: 100px;
+    width: 100px;
 }
+/* .container  {
+    position: flex;
+    flex-direction: row;
+
+} */
+.page-footer {
+    background-color: white;
+}
+.white-text {
+    color: #d50000 !important; 
+}
+.grey-text.text-lighten-3 {
+    color: #d50000 !important;
+}
+.grey-text.text-lighten-4 {
+    color: #d50000 !important;
+} 
+.copyright {
+    color: #d50000 !important;
+}
+.blankspace {
+    width: 336px;
+    height: 466px;
+}
+.loginform {
+    height: 466px;
+    border: solid grey;
+}
+.signupform {
+    border: solid grey;
+}
+/* #message {
+    border: solid grey;
+    background-color: white;
+} */
+#name {
+    border: solid grey;
+    background-color: white;
+    width: 980px;
+    height: 51px;
+}
+#email {
+    border: solid grey; 
+    background-color: white;
+    width: 980px;
+}
+.contactform {
+    border: solid grey;
+
+}
+.dashboard {
+    border: solid grey;
+}
+.banner {
+    border: solid grey;
+}
+/* .medications-block {
+    border: solid grey;
+    height: 200px;
+} */
+.new-medication {
+    border: solid grey;
+}
+
+/*     border-bottom: 50px;
+} */
 
 
 #location-button{
@@ -23,7 +96,7 @@ nav ul a {
    }
   
    
-   #map {
+#map {
        height: 100%;
      }
      /* Optional: Makes the sample page fill the window. */
@@ -51,16 +124,16 @@ nav ul a {
        font-size: 12px;
      }
      #map-panel {
-        align-self: center;
+        /* align-self: center;
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;
         top: 60%;
-        margin-top: -50px;
-        height: 75%;
-        width: 85%;
-        right: 4%;
+        margin-top: -50px; */
+        height: 501px;
+        width: 459px;
+        /* right: 4%;
         padding: 5px;
-        z-index: 5;
+        z-index: 5; */
         border: 1px solid #999;
         background: #fff;
      }
@@ -69,7 +142,6 @@ nav ul a {
        margin: 0 0 5px 0;
        text-align: center;
      }
-
      #places {
        list-style-type: none;
        padding: 0;
