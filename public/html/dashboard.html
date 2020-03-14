@@ -10,70 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/jquery.fulltable.css" media="screen" title="no title">
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
-
-
-    <script type="text/javascript">
-        $(
-            function () {
-                $("#test-table").FullTable({
-                    "alwaysCreating": true,
-                    "selectable": true,
-                    "fields": {
-
-                        "medname": {
-                            "mandatory": true,
-                            "errors": {
-                                "mandatory": "Medication Name is mandatory"
-                            }
-                        },
-                        "dosage": {
-                            "mandatory": true,
-                            "errors": {
-                                "mandatory": "Dosage is mandatory"
-                            }
-                        },
-                        "frequency": {
-                            "mandatory": true,
-                            "errors": {
-                                "mandatory": "Frequency is mandatory"
-                            },
-                        },
-
-                        "quantity": {
-                            "type": "integer",
-                            "mandatory": true,
-                            "errors": {
-                                "type": "Quantity must be a number",
-                                "mandatory": "Quantity is mandatory",
-                            }
-                        },
-                        "timelastconsumed": {
-                            "mandatory": false
-                        }
-                    }
-                });
-                $("#test-table-add-row").click(function () {
-                    $("#test-table").FullTable("addRow");
-                });
-                $("#test-table-get-value").click(function () {
-                    console.log($("#test-table").FullTable("getData"));
-                });
-                $("#test-table").FullTable("on", "error", function (errors) {
-                    for (var error in errors) {
-                        error = errors[error];
-                        console.log(error);
-                    }
-                });
-                $("#test-table").FullTable("draw");
-            }
-        );
-    </script>
-
-
-
-
 
 
 
@@ -105,86 +41,75 @@
     </div>
 
     <div class="container">
+        <div class="row center-align">
+            <div class="col s12 center-align">
+                <h4>Current Medications</h4>
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Dosage</th>
+                            <th>Quantity</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="currentMeds">
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col s8 offset-s2 center-align">
+                <h4>Add New Medication</h4>
+                <div class="row">
+                    <form class="col s12 add_medication">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="dosage" type="text" class="validate">
+                                <label for="dosage">Dosage</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="quantity" type="text" class="validate">
+                                <label for="quantity">Quantity</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="frequency" type="text" class="validate">
+                                <label for="frequency">Frequency</label>
+                            </div>
+                        </div>
+
+                        <button class="waves-effect waves-light btn-small" type="submit" id="addmedication" style="width: 100%;
+                        margin: 5px 0 0 0; color: white; margin-bottom: 10px; opacity: 50%;">Add</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
         <br>
         <br>
         <br>
 
-        </script>
-        <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
+        <br>
 
-    </div>
-    <div class="jquery-script-clear"></div>
-    </div>
-    </div>
-    <div class="container">
-
-        <a class="btn-large disabled" id="badge">Hello there. Add a prescription below.</a>
-
-        <!-- <h1>jQuery FullTable Plugin Demonstration</h1> -->
-        <table class="fulltable fulltable-editable" id="test-table">
-            <thead>
-                <tr>
-                    <th fulltable-field-name="medname">Medication Name</th>
-                    <th fulltable-field-name="dosage">Dosage</th>
-                    <th fulltable-field-name="frequency">Frequency</th>
-                    <th fulltable-field-name="quantity">Quantity</th>
-                    <th fulltable-field-name="timelastconsumed">Time Last Consumed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span>Vicodin</span></td>
-                    <td><span>10mg</span></td>
-                    <td><span>One every 4 hours</span></td>
-                    <td><span>30</span></td>
-                    <td><span>4:00 pm</span></td>
-                </tr>
-                <tr>
-                    <td><span>Amoxicillin</span></td>
-                    <td><span>250mg</span></td>
-                    <td><span>500mg every 8 hours</span></td>
-                    <td><span>50</span></td>
-                    <td><span>9:00 am</span></td>
-                </tr>
-                <tr>
-                    <td><span>Flonase</span></td>
-                    <td><span>50mcg</span></td>
-                    <td><span>One spray each day</span></td>
-                    <td><span>75</span></td>
-                    <td><span>1:00 pm</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-
-
-
-    </div>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-
-
-
-    <br>
-    <br>
-    <br>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../js/jquery.fulltable.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/js/dashboard.js"></script>
 
 
 </body>

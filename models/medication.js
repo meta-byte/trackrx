@@ -18,22 +18,17 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allownull: false,
         },
-        timestamp: {
-            type: DataTypes.DATE,
-            allownull: false,
-        },
-
     });
 
     Medication.associate = function (models) {
         Medication.belongsTo(models.User, {
             foreignKey: {
-                allownull: false
+                name: 'UserId',
+                defaultValue: '1',
+                allowNull: true
             }
         });
     };
-
-    Medication.sync()
 
     return Medication;
 };
