@@ -6,7 +6,7 @@
 This application will provide a simple user interface (that will require log-in credentials for security purposes) that will allow a user to:
 *Input which medications they are currently utilizing
 *Their medication dosage (e.g. in milligrams)
-*The number of times per day they should consume the medication(s), and 
+*View a medication dashboard private to their user credentials, and 
 *View nearby pharmacies based on their current location
 
 These details will be consolidated in a straightforward dashboard view. 
